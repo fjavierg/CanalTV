@@ -1,0 +1,52 @@
+<!-- saved from url=(0013)about:internet -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>RSSreader</title>
+<script type="text/javascript" src="swfobject/swfobject.js"></script>
+
+ <script type="text/javascript">
+ 	var flashvars = {};
+	var params = {};
+	params.allowscriptaccess = "true";
+	params.bgcolor="#333333";
+	var attributes = {};
+	attributes.name="RSSreader";
+	
+ 	swfobject.embedSWF("RSSreader.swf", "placeholder", "100%", "100%", "8","expressInstall.swf", flashvars, params, attributes);
+ </script>
+
+<style type="text/css">
+html {
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #eee;
+}
+#placeholder {
+  height: 100%;
+}
+</style>
+
+</head>
+
+<body bgcolor="#333333"">
+
+<script type="text/javascript">
+// Handle all the FSCommand messages in a Flash movie.
+function RSSreader_DoFSCommand(command, args) {
+ 	swfobject.embedSWF("MyWeather3.swf", "placeholder", "100%", "100%", "8","expressInstall.swf", flashvars, params, attributes);
+}
+</script>
+
+
+<p id="placeholder"></p>
+
+
+</body>
+</html>

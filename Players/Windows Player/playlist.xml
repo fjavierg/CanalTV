@@ -1,0 +1,13 @@
+<!-- You can comment XML code in this manner --> 
+
+<playlist>
+  <head> 
+  	<title>Todos los videos</title>
+  </head>
+  <body>	  
+	<media src="c:\clips\MyWeather3.swf" />
+	<media src="c:\clips\RSSReader.swf" />
+	<media src="c:\clips\globe.avi" />
+	<media src="c:\clips\MyWeather3.swf" />
+  </body>
+</playlist>

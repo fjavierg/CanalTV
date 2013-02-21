@@ -1,0 +1,18 @@
+<vxml version="2.0">
+<form id="MainMenu">
+	<field name="hello" type="digits?minlength=1;maxlength=1">
+		<prompt>Isn't this exciting?<audio src="http://205.188.234.65:8006" /></prompt>
+		<filled>
+		  <choice dtmf="0" next="#checkBalance" action="play">Check account balance</choice> 
+		  <choice dtmf="1" next="#checkBalance" action="play">Check account balance</choice> 
+		  <choice dtmf="2" next="#checkBalance" action="play">c:\clips\peli.wmv</choice> 
+		  <choice dtmf="3" next="#checkBalance" action="run">c:\clips\pacman.swf</choice> 
+
+		</filled>
+	</field
+0,0,play,c:\clips\VPmenu.swf
+0,1,play,c:\clips\globe.avi
+0,2,play,c:\clips\peli.wmv
+0,3,run,c:\clips\pacman.swf
+</form>
+</vxml>

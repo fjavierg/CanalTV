@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<rss version="2.0"> 
+  <channel> 
+    <title>Channel1</title> 
+    <link>www.jagova65.com</link> 
+    <description></description>
+    <language>es-es</language> 
+    <copyright></copyright>
+
+  <item><title></title><link>RSSreader.swf</link><description></description></item>
+  <item><title></title><link>Sports.swf</link><description></description></item>
+  <item><title></title><link>Sabias.swf</link><description></description></item>
+  <item><title></title><link>Fotos.swf</link><description></description></item>
+  <item><title></title><link>Perra.swf</link><description></description></item>
+  <item><title></title><link>Weather.swf</link><description></description></item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,4 @@
+0,0,play,c:\clips\VPmenu.swf
+0,1,play,c:\clips\globe.avi
+0,2,play,c:\clips\peli.wmv
+0,3,run,c:\clips\pacman.swf

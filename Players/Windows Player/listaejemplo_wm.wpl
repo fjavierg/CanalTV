@@ -1,0 +1,15 @@
+﻿<?wpl version="1.0"?>
+<smil>
+    <head>
+        <meta name="Generator" content="Microsoft Windows Media Player -- 9.0.0.2980"/>
+        <title>Todos los vídeos</title>
+    </head>
+    <body>
+        <seq>
+            <media src="..\..\clips\globe.avi" tid="{92E5B581-8F8A-439D-B1C3-2708BCE70741}"/>
+            <media src="..\..\clips\peli.wmv" tid="{76D7EE60-3A93-44DF-AD59-37F1703C86CA}"/>
+            <media src="..\..\clips\Video1.wmv" tid="{251C03DF-5814-4EDD-996A-FE417E0C903F}"/>
+            <media src="..\..\clips\basquet.wmv" tid="{E53E1BB2-A200-4E46-83DB-C8A5D78F4A47}"/>
+        </seq>
+    </body>
+</smil>

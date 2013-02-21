@@ -1,0 +1,50 @@
+Obtención de las fotos del día del pais
+
+
+Ir a http://www.elpais.com/fotografia/
+Buscar la foto debajo de la clase "objeto_fotoga" y el título
+Buscar debajo de la clase "nav_ant_sig" el link a la siguiente
+Repetir N veces
+Generar un RSS XML
+
+Modificar el lector de RSS para que lea también las enclosures y presente las fotos
+Ver distintos efectos o componentes para cambio de fotos (image rotator)
+	 	VER http://www.connatserdev.com/blog/?p=19
+
+
+
+
+
+Un ejemplo de extracción de info
+
+
+<?php
+
+$title="Cars";
+$year="2006";
+
+		// The link page that should contain the url
+		$query_str=$title ." ". $year . " inurl:title site:imdb.com";
+		$link_page="http://www.google.com/search?q=" . urlencode($query_str);
+		
+		// Use Curl to return the raw source of a webpage to a variable called $result
+		$ch = curl_init();
+		curl_setopt($ch, CURLOPT_URL,$link_page);
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER,1);
+		$result=curl_exec ($ch);
+		curl_close ($ch);
+		
+		$pos = strpos($result,"http://www.imdb.com/title/tt");
+		if($pos !== false)
+		{
+		   $parts2 = explode("http://www.imdb.com/title/tt",$result);
+		   $parts3 = explode("/",$parts2[1]);
+		   echo intval($parts3[0]);
+		}
+		else
+		{
+			echo "Titulo : " . $title . "NOT FOUND OR ERROR";
+		}
+?>
+
+

@@ -1,0 +1,38 @@
+Pendiente
+
+Extender el RSSreader para que sea capaz de leer y descargar las posibles fotos existentes en el RSS.enclosure (o media)
+Contenido de fotos del día (ver el .txt escrito sobre el tema
+
+Player.fla Precargar los SWF antes de tener que ejecutarlos para evitar tiempos de espera entre mçodulos
+
+Tratamiento de errores (p.e. XML mal formado)
+
+
+
+28-11-2008. Fotos.fla Las fotos y textos son actualmente estáticos, hacerlos dinámicos leyendo de fichero. Hecho, lee de fotos.xml(RSS version 2)
+27-11-2008. Modificado el Player.fla para que obtenga la playlist de un fichero playlist.xml (RSS version 2)
+
+
+
+
+
+Modulos
+
+Player.fla es el player que va leyendo los SWF y los ejecuta. El fla es vacío y la lógica está toda en el Main.as
+Carga el SWF (Loader) lo convierte en MovieClip y lo ejecuta con un listener en EnterFrame para detectar el final
+Para detectar el final de un SWF mira las frames del Main Timeline, por tanto todos los contenidos deben acabar en el último frame del Maintimelie (y tener un stop();
+carga el siguiente SWF, ....
+
+RSSreader.fla Lee el RSS elpais.txt y lo presenta los items.
+
+Sabias.fla Lee el RSS sabias.xml y lo presenta
+
+MyWeather3.fla. Lee el tiempo de yahoo_bcn.txt y lo presenta generando los iconos correspondientes
+
+
+
+
+RSS_grabber.php
+Lee y genera un fichero local con los RSS de El pais y Yahoo
+
+RSSsabiask.php Lee 4 lineas aleatorias de sabiask.txt y genera un RSS llamado sabias.xml para ser utilizado por Sabias.swf

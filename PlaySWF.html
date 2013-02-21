@@ -1,0 +1,32 @@
+<!-- saved from url=(0013)about:internet -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>RSSreader</title>
+
+</head>
+<script type="text/javascript" src="javascript_files/swfobject.js"></script>
+<body bgcolor="#333333" onload="createPlayer()">
+
+<script type="text/javascript">
+
+function createPlayer() {
+	var s1 = new SWFObject("RSSreader.swf","RSSreader","1000","740","8","#333333");
+	s1.addParam("allowscriptaccess","always");
+	s1.write("placeholder");
+};
+
+// Handle all the FSCommand messages in a Flash movie.
+function RSSreader_DoFSCommand(command, args) {
+	var s1 = new SWFObject("MyWeather3.swf","player","1000","740","8","#333333");
+	s1.addParam("allowscriptaccess","always");
+	s1.write("placeholder");
+}
+</script>
+
+<p id="placeholder"></p>
+
+
+</body>
+</html>
